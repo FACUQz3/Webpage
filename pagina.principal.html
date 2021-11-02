@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, scale-initial=1.0">
+    <title>Biblioteca ISFD </title>
+    <link rel="stylesheet" href="Estilo/estilo.css">
+    <!----font-oswald---->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+<link href="Estilo/fontawesome5/css/all.css" rel="stylesheet"> 
+ <!----verificar ingreso---->
+ <!--<script> 
+
+     function verificar(){
+         var estado=true;
+         if(document.getElementById("nombresdelibro").value=="" ||document.getElementById("apellidos").value==""){
+             estado=false;
+             
+         }
+         return estado;
+     }
+</script>-->
+</head>
+<body>  
+         <nav class="nav-main">
+             <img src="img/logo.jpeg" alt="pagina logo" class="nav-brand">
+            
+              <tittle><h1>Biblioteca ISFD</h1></tittle>
+             <div id="hearder">
+       <ul class="nav">
+       <li><a href="">Inicio</a> </li>
+       
+       <li><a href="">Servicos</a>
+              <ul>
+               <li><a href="">submenu1</a> </li>
+               <li><a href="">submenu2</a> </li>
+               <li><a href="">submenu3</a> </li>
+           </ul>
+       
+ </li>
+           
+       <li><a href="">acerca de</a>
+       <ul>
+               <li><a href="">submenu1</a> </li>
+               <li><a href="">submenu2</a> </li>
+               <li><a href="">submenu3</a> </li>
+           </ul>
+       
+        </li>
+       
+       <li><a href="">contactos</a> </li> 
+       
+       </ul> 
+               </div> 
+                
+            <ul class="nav-menu">
+            <li> <div class="box" id="buscador">
+                 <input type="text" name="Search" placeholder="Buscar su libro aquí" class="src" autocomplete="off">
+                 <a href="#" class="subrayado">
+                     <i class="fas fa-search"></i></a>
+                     
+                     
+             </div>
+             
+             </li>
+             </ul>
+         </nav>
+          
+        <!-- <header class="showcase">  </header> -->
+       
+    <br>
+    <div class="form-register">
+    <h4>Formulario <span>  Registro </span> de libro</h4>
+    <form action="registro.php" method="post" >
+          
+           
+        <input class="controles" type="text" name="nombredelibro" id="nombresdelibro" placeholder="Ingrese nombre del libro">
+
+        <input class="controles" type="text" name="nombreautor" id="apellidos" placeholder="Ingrese Nombre y Apellido del Autor ">
+        <input class="controles" type="text" name="categoria" id="categoria" placeholder="Ingrese la Categoria">
+
+        <input class="controles" type="number" name="cuantoslibros" id="Libros" placeholder="Cantidad de libro">
+
+        <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+
+        <input class="botons" type="submit" value="Guardar">
+   </form> 
+   <?php
+   include("registro.php");
+   ?>
+  </div> 
+</body>
+</html>
