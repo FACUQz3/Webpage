@@ -1,0 +1,47 @@
+<!DOCTYPE HTML> 
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <title>Biblioteca ISFD</title> 
+        <link rel="stylesheet" href="Estilo/stilo.css">
+        <style>
+
+            color-fondo {background-color: darkred; }
+        </style>
+        <script>
+            
+            /*
+            function enviar(){
+                var x=true;
+                if (document.getElementById("usuario").value=="" || document.getElementById("clave").value==""){
+                    x=false
+                }
+                return x;
+            }
+            */
+        </script>
+    
+    </head> 
+<body> 
+    <div class="login-box"> <img class="avatar" src="img/logo.jpeg">         
+    <h1>Bibliotea ISFD</h1> 
+    <form action="./validarAcceso.php" method="post" name="formulario-envio"> 
+    
+    <label for="Nombre de usuario">Usuario</label> <!-- nombre de usuario --> 
+        <input id="usuario" name="usuario" value="Norita" type="text" placeholder="Ingrese su usuario">  
+    <label for="contraseña">Contraseña</label> <!-- contraseña -->
+        <input id="clave" name="clave" value="12345" type="password" placeholder="Ingrese su contraseña">
+        
+        <div> 
+        <input type="submit" value="log In" class="color-fondo">
+        </div>
+        
+        <a href="a">¿Olvidó su contraseña?</a>
+        <br>
+        <a href="a">Crear usuario</a>
+        
+    </form> 
+    </div> 
+</body> 
+
+</html>
